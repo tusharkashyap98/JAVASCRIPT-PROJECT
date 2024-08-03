@@ -144,8 +144,6 @@ button {
     padding: 5px;
     font-size: 11px;
   }
-  
-
 }
 
 @media (max-width: 415px) {
@@ -169,5 +167,4 @@ button {
     padding: 4px;
     font-size: 10px;
   }
-
 }
