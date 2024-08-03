@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ font-family: "Bodoni Moda", serif;
+ font-size: 1.2rem;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(to right, #041308 ,#0b3317 );
+}
+
+.left-text{
+   flex-basis: 30%;
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+.subheading{
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+}
+.gallery{
+   display: grid;
+    flex-basis: 50%;
+    gap: 8px;
+    grid-auto-rows: 120px;
+    grid-template-areas: 
+    'waterfall hill hill'
+     'waterfall ocean rain'
+     'mountain mountain rain'
+     'tree beach beach'
+    ;
+ }
+
+ .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    color: white;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+ }
+
+
+
+.box-1{
+   grid-area: waterfall;
+}
+.box-2{
+   grid-area: hill;
+}
+.box-3{
+   grid-area: ocean;
+}
+.box-4{
+   grid-area: rain;
+}
+.box-5{
+   grid-area: mountain;
+}
+.box-6{
+   grid-area: tree;
+}
+.box-7{
+   grid-area: beach;
+}
+
+.box:hover{
+   background-color: #999;
+   background-position: center;
+   box-shadow: 0 0 4px #fff;
+   cursor: pointer;
+}
+
+
+
+
+@media(max-width:1024px){
+   .container{
+      flex-direction: column;
+   }
+   .gallery{
+      width: 90%;
+      grid-template-areas: 
+      'waterfall waterfall waterfall'
+      'hill hill hill'
+      'ocean ocean ocean'
+      'rain rain rain'
+      'mountain mountain mountain'
+      'tree tree tree'
+      'beach beach beach'
+      ;
+   }
+   .heading{
+      font-size: 1.5rem;
+  }
+  .subheading{
+   font-size: 1rem;
+   padding-inline: 1.5rem;
+  }
+}
+
