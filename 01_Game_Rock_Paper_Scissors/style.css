@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background-color: aqua;
+}
+
+h1 {
+  background-color: gray;
+  color: #000000e0;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  background-color: #081b31;
+  cursor: pointer;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.choices {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+#msg {
+  background-color: #081b31;
+  color: white;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+button {
+  background-color: #081b31;
+  color: white;
+  margin-top: 2rem;
+  padding: 6px;
+  /* border-radius: 7%; */
+  border-radius: 8px;
+}
+
+@media (max-width: 905px) {
+  #msg {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .choice {
+    height: 140px;
+    width: 140px;
+  }
+  img {
+    height: 125px;
+    width: 125px;
+  }
+
+  .choices {
+    gap: 1.5rem;
+  }
+
+  #msg {
+    font-size: 1rem;
+  }
+  #user-score,
+  #comp-score {
+    font-size: 2rem;
+  }
+  .score-board {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  button {
+    margin-top: 1.5rem;
+    padding: 4px;
+  }
+  button {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 490px) {
+  .choice {
+    height: 130px;
+    width: 130px;
+  }
+  img {
+    height: 115px;
+    width: 115px;
+  }
+
+  .choices {
+    gap: 0.75rem;
+  }
+  #msg {
+    font-size: 13px;
+  }
+
+  button {
+    padding: 5px;
+    font-size: 11px;
+  }
+  
+
+}
+
+@media (max-width: 415px) {
+  .choice {
+    height: 120px;
+    width: 120px;
+  }
+  img {
+    height: 105px;
+    width: 105px;
+  }
+
+  .choices {
+    gap: 0.65rem;
+  }
+  #msg {
+    font-size: 10px;
+  }
+
+  button {
+    padding: 4px;
+    font-size: 10px;
+  }
+
+}
