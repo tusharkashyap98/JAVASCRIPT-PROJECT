@@ -21,6 +21,7 @@
 }
 .country-details img{
     width: 40%;
+    border: 1px solid #ddd;
 
 }
 
