@@ -10,6 +10,9 @@ const topLevelDomain = document.querySelector(".top-level-domain");
 const currencies = document.querySelector(".currencies");
 const languages = document.querySelector(".language");
 const borderCountries = document.querySelector(".border-countries");
+const themeChange = document.querySelector(".theme-change");
+
+
 
 fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
   .then((res) => res.json())
@@ -64,3 +67,8 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     }
 
   });
+
+
+ themeChange.addEventListener("click",()=>{
+  document.body.classList.toggle("dark");
+ })

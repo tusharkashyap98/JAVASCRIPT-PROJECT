@@ -1,7 +1,7 @@
 const countriesContainer = document.querySelector(".countries-container");
 const filterByRegion = document.querySelector(".filter-by-region");
 const searchInput = document.querySelector(".search-container input");
-const themeChanger = document.querySelector(".theme-changer");
+let themeChanger = document.querySelector(".theme-changer");
 
 let allCountriesData 
 
@@ -46,7 +46,7 @@ searchInput.addEventListener("input",(e)=>{
   // console.log(e.target.value);
   // console.log(allCountriesData);
  const filteredCountries =  allCountriesData.filter((country)=> country.name.common.toLowerCase().includes(e.target.value.toLowerCase()))
- console.log(filteredCountries);
+//  console.log(filteredCountries);
  randerCountries(filteredCountries)
 })
 
